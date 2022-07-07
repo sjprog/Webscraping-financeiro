@@ -30,7 +30,7 @@ estrategia = Estrategia(
     dividiend_yield_minimo=5,
     p_vp_minimo=0.70,
     valor_mercado_minimo=200000000,
-    liguidez_minima=50000,
+    liquidez_minima=50000,
     qt_minima_imoveis=5,
     maxima_vacancia_media=10
 )
@@ -63,7 +63,9 @@ tabela = []
 
 for elemento in resultado:
     tabela.append([
-        elemento.codigo, elemento.segmento, locale.currency(elemento.cotacao_atual), f'{locale.str(elemento.dividiend_yield)}%'
+        elemento.codigo, elemento.segmento, locale.currency(elemento.cotacao_atual),
+        f'{locale.str(elemento.dividiend_yield)}% '
     ])
 
 print(tabulate(tabela, headers=cabecalho, showindex='always', tablefmt='fancy_grid'))
+
