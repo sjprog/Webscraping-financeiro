@@ -57,7 +57,7 @@ for linha in linhas:
     if estrategia.aplica_estrategia(fundo_imobiliario):
         resultado.append(fundo_imobiliario)
 
-cabecalho = ["CÓDIGO", "SEGMENTO", "COTAÇÃO ATUAL", "DIVIDEND YIELD"]
+cabecalho = ['CÓDIGO', 'SEGMENTO', 'COTAÇÃO ATUAL', 'DIVIDEND YIELD']
 
 tabela = []
 
